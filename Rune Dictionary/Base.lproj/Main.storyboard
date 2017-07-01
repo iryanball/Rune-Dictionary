@@ -1,14 +1,25 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11134" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="T07-MT-j9f">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11106"/>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
+    <customFonts key="customFonts">
+        <array key="AvenirNext.ttc">
+            <string>AvenirNext-Bold</string>
+            <string>AvenirNext-Regular</string>
+        </array>
+    </customFonts>
     <scenes>
-        <!--View Controller-->
+        <!--Dictionary-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rune_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
@@ -16,11 +27,646 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="yoe-wa-NQL">
+                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="z71-OM-QQu">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z71-OM-QQu" id="oaW-gN-ygg">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                        </tableViewCellContentView>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="BYZ-38-t0r" id="eWI-q6-fR8"/>
+                                    <outlet property="delegate" destination="BYZ-38-t0r" id="5Z7-aZ-N8y"/>
+                                </connections>
+                            </tableView>
+                        </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="yoe-wa-NQL" firstAttribute="bottom" secondItem="wfy-db-euE" secondAttribute="top" id="4pe-Fi-5G0"/>
+                            <constraint firstItem="yoe-wa-NQL" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="8Kz-tH-yJL"/>
+                            <constraint firstItem="yoe-wa-NQL" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="64" id="cCF-ga-2st"/>
+                            <constraint firstAttribute="trailing" secondItem="yoe-wa-NQL" secondAttribute="trailing" id="gTn-5r-JRq"/>
+                        </constraints>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Dictionary" image="Dictionary" id="eZg-uO-CZ2"/>
+                    <connections>
+                        <outlet property="tableView" destination="yoe-wa-NQL" id="Wek-YK-yIF"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="1997.1014492753625" y="136.95652173913044"/>
+        </scene>
+        <!--Info View Controller-->
+        <scene sceneID="C8Z-O7-4D3">
+            <objects>
+                <viewController id="hdC-Rj-UOp" customClass="InfoViewController" customModule="Rune_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="eBy-sy-Ksv"/>
+                        <viewControllerLayoutGuide type="bottom" id="1J7-ma-6uV"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="3yY-1d-Ab9">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWR-Fg-1Tg">
+                                <rect key="frame" x="16" y="72" width="343" height="575"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <attributedString key="attributedText">
+                                    <fragment content="How To Do A Reading">
+                                        <attributes>
+                                            <color key="NSColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            <font key="NSFont" size="24" name="AvenirNext-Bold"/>
+                                            <real key="NSKern" value="0.0"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                            <color key="NSStrokeColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="AvenirNext-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                <tabStops/>
+                                            </paragraphStyle>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="AvenirNext-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <mutableString key="content">Before you begin casting there are a few things that you may want to do to get yourself in the correct frame of mind. In doing readings and castings the one thing that is necessary is that you are comfortable and prepared before you start. Nothing on this page is absolutely necessary to do a rune reading (except, obviously, a rune set) so if you feel like you’d like to do something different than the way this info page suggests, then please do so. You know yourself better than anyone else and what makes you comfortable will only help you in a reading. Okay with that said here are a few suggestions.
+
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="AvenirNext-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Time of Day">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="AvenirNext-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="AvenirNext-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <mutableString key="content">
+Some people say that castings should only be done during the day, outside, with the sun shining. Others will tell you that the proper time to get the best reading would be near midnight when the veil between this world and the “Other World” is at it’s thinnest, therefore getting help from spirits. I’ve even seen ways to calculate what time of the day to do a reading depending on the question you are asking. This is really all up to you. There is no hard evidence to say that one way is better than the other so try a few castings at different times and see which time works best for you.
+
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="AvenirNext-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Weather">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="AvenirNext-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="AvenirNext-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <string key="content">
+I mentioned above about the shinning sun. Why would this be a better time than a calm day that’s slightly overcast? Well the reason is that the weather can affect our mood and the one thing that we want is to be in the best frame of mind. If you cast on a day when you’re not in a good mood this can affect the outcome. So you may want to hold off to do a casting until the weather and your mood is perfect.
+
+</string>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="AvenirNext-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Surroundings">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="AvenirNext-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <mutableString key="content">
+
+Something that you may want to consider when you sit down to cast the runes is your surroundings. This can be important because of the surrounding energy fields. You don’t want to cast near power lines where the energy given off by the lines could some into conflict with your own power.
+
+Another thing to look out for is the people around you. You don’t want to have people who are skeptical or doubt what the runes can do. If you have people around you doubting this can come into play with your own feelings about the runes. You may even start to doubt yourself and therefore get a poor or inaccurate reading.
+
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="AvenirNext-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Casting Set-up">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="AvenirNext-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <mutableString key="content">
+
+If you are casting outside the set-up is simple. Face the sun, layout your casting cloth and pillow and take a seat on the pillow. On the opposite end of the casting cloth place your mearmots and the question written on a piece of paper, if you’d like. Gather up the runes, think about the question you are asking and then toss the runes in front of you.
+
+If you are casting indoors there are a few possible set-ups that you can do. First find a room where you can layout your casting cloth where nothing will be in the way, and so it’s not bunched up against the sofa or anything like that. If it’s possible set up the cloth so that you can sit facing east or in the direction of the sun at that time of the day. If it’s at night then you can set the cloth up so that you are facing the moon, or to the east to “await” the rising sun. What happens if you can’t lay your casting cloth to face to the sun? Well you can just cast in whichever direction that the cloth fits in the room. Or you can try to layout the cloth so that the longest side of the cloth is parallel with the longest wall in the room. The choice is up to you.
+
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="AvenirNext-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Casting">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="AvenirNext-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <mutableString key="content">
+
+You are now ready to start casting. You have your casting cloth laid out in the setting of your choice, you’re in a surrounding that makes you comfortable and everything is perfect. Now gather your runes and have a seat because it’s time to cast. Layout your runes face-up in front of you and make sure that they are all there. If you have a pouch that you use to carry your runes in place them back in the pouch and mix them up. If you have small rune tiles, or large hands, you can mix the runes up in your hands. Concentrate on your question and toss the runes down on the cloth in front of you. Now you’re going to need to choose the number of runes that you’ll need for the spread that you have chosen. To do this you are only going to use then runes that landed face-up. If, by chance, you do not have enough runes to fill the places in the spread you have chosen you can do a few things. You can re-cast the runes that have landed face down, cast the whole spread over, or leave the places in the spread blank. I suggest that you re-cast the remaining face down runes.
+
+</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="AvenirNext-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment content="Picking the Runes From the Casting Cloth">
+                                        <attributes>
+                                            <font key="NSFont" size="18" name="AvenirNext-Bold"/>
+                                        </attributes>
+                                    </fragment>
+                                    <fragment>
+                                        <mutableString key="content">
+
+When the runes land on the cloth in front of you, how do you know which runes to pick up? There are a few ways to determine that. You could pick a single spot on the cloth before you cast the runes and then pick up the face-up rune closest to it to fill the first spot in the spread. You would then pick up the next closest rune to that spot for the second place, and so on until you’ve filled all the places in the spread.
+
+Another way to do it is to draw an imaginary line down the centre of your casting cloth and pick the rune that lands face-up and closest to the line. Start with the rune that is closest to the line first. If there are two that are about the same distance then pick the rune that is closest to you and the line. After you have filled all the places in your spread the next thing is to read them using the meanings of your runes. Which can be found in the Dictionary section.</mutableString>
+                                        <attributes>
+                                            <font key="NSFont" size="15" name="AvenirNext-Regular"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <attributedString key="attributedText">
+                                        <fragment content="How To Do A Reading">
+                                            <attributes>
+                                                <color key="NSColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                                <font key="NSFont" size="30" name="AvenirNext-Bold"/>
+                                                <real key="NSKern" value="0.0"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                                <color key="NSStrokeColor" red="0.59999999999999998" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="AvenirNext-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="left" lineBreakMode="wordWrapping" baseWritingDirection="leftToRight" defaultTabInterval="36" tighteningFactorForTruncation="0.0" allowsDefaultTighteningForTruncation="NO">
+                                                    <tabStops/>
+                                                </paragraphStyle>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content" base64-UTF8="YES">
+Cg
+</string>
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="AvenirNext-Regular"/>
+                                                <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">Before you begin casting there are a few things that you may want to do to get yourself in the correct frame of mind. In doing readings and castings the one thing that is necessary is that you are comfortable and prepared before you start. Nothing on this page is absolutely necessary to do a rune reading (except, obviously, a rune set) so if you feel like you’d like to do something different than the way this info page suggests, then please do so. You know yourself better than anyone else and what makes you comfortable will only help you in a reading. Okay with that said here are a few suggestions.
+
+</mutableString>
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Time of Day">
+                                            <attributes>
+                                                <font key="NSFont" size="30" name="AvenirNext-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">
+
+Some people say that castings should only be done during the day, outside, with the sun shining. Others will tell you that the proper time to get the best reading would be near midnight when the veil between this world and the “Other World” is at it’s thinnest, therefore getting help from spirits. I’ve even seen ways to calculate what time of the day to do a reading depending on the question you are asking. This is really all up to you. There is no hard evidence to say that one way is better than the other so try a few castings at different times and see which time works best for you.
+
+</mutableString>
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Weather">
+                                            <attributes>
+                                                <font key="NSFont" size="30" name="AvenirNext-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <string key="content">
+
+I mentioned above about the shinning sun. Why would this be a better time than a calm day that’s slightly overcast? Well the reason is that the weather can affect our mood and the one thing that we want is to be in the best frame of mind. If you cast on a day when you’re not in a good mood this can affect the outcome. So you may want to hold off to do a casting until the weather and your mood is perfect.
+
+</string>
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Surroundings">
+                                            <attributes>
+                                                <font key="NSFont" size="30" name="AvenirNext-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">
+
+Something that you may want to consider when you sit down to cast the runes is your surroundings. This can be important because of the surrounding energy fields. You don’t want to cast near power lines where the energy given off by the lines could some into conflict with your own power.
+
+Another thing to look out for is the people around you. You don’t want to have people who are skeptical or doubt what the runes can do. If you have people around you doubting this can come into play with your own feelings about the runes. You may even start to doubt yourself and therefore get a poor or inaccurate reading.
+
+</mutableString>
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Casting Set-up">
+                                            <attributes>
+                                                <font key="NSFont" size="30" name="AvenirNext-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">
+
+If you are casting outside the set-up is simple. Face the sun, layout your casting cloth and pillow and take a seat on the pillow. On the opposite end of the casting cloth place your mearmots and the question written on a piece of paper, if you’d like. Gather up the runes, think about the question you are asking and then toss the runes in front of you.
+
+If you are casting indoors there are a few possible set-ups that you can do. First find a room where you can layout your casting cloth where nothing will be in the way, and so it’s not bunched up against the sofa or anything like that. If it’s possible set up the cloth so that you can sit facing east or in the direction of the sun at that time of the day. If it’s at night then you can set the cloth up so that you are facing the moon, or to the east to “await” the rising sun. What happens if you can’t lay your casting cloth to face to the sun? Well you can just cast in whichever direction that the cloth fits in the room. Or you can try to layout the cloth so that the longest side of the cloth is parallel with the longest wall in the room. The choice is up to you.
+
+</mutableString>
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Casting">
+                                            <attributes>
+                                                <font key="NSFont" size="30" name="AvenirNext-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">
+
+You are now ready to start casting. You have your casting cloth laid out in the setting of your choice, you’re in a surrounding that makes you comfortable and everything is perfect. Now gather your runes and have a seat because it’s time to cast. Layout your runes face-up in front of you and make sure that they are all there. If you have a pouch that you use to carry your runes in place them back in the pouch and mix them up. If you have small rune tiles, or large hands, you can mix the runes up in your hands. Concentrate on your question and toss the runes down on the cloth in front of you. Now you’re going to need to choose the number of runes that you’ll need for the spread that you have chosen. To do this you are only going to use then runes that landed face-up. If, by chance, you do not have enough runes to fill the places in the spread you have chosen you can do a few things. You can re-cast the runes that have landed face down, cast the whole spread over, or leave the places in the spread blank. I suggest that you re-cast the remaining face down runes.
+
+</mutableString>
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment content="Picking the Runes From the Casting Cloth">
+                                            <attributes>
+                                                <font key="NSFont" size="30" name="AvenirNext-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                        <fragment>
+                                            <mutableString key="content">
+
+When the runes land on the cloth in front of you, how do you know which runes to pick up? There are a few ways to determine that. You could pick a single spot on the cloth before you cast the runes and then pick up the face-up rune closest to it to fill the first spot in the spread. You would then pick up the next closest rune to that spot for the second place, and so on until you’ve filled all the places in the spread.
+
+Another way to do it is to draw an imaginary line down the centre of your casting cloth and pick the rune that lands face-up and closest to the line. Start with the rune that is closest to the line first. If there are two that are about the same distance then pick the rune that is closest to you and the line. After you have filled all the places in your spread the next thing is to read them using the meanings of your runes. Which can be found in the Dictionary section.</mutableString>
+                                            <attributes>
+                                                <font key="NSFont" size="20" name="AvenirNext-Regular"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </variation>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="sWR-Fg-1Tg" firstAttribute="top" secondItem="eBy-sy-Ksv" secondAttribute="bottom" constant="8" id="K18-oZ-rby"/>
+                            <constraint firstItem="1J7-ma-6uV" firstAttribute="top" secondItem="sWR-Fg-1Tg" secondAttribute="bottom" constant="20" id="N6k-lP-iaN"/>
+                            <constraint firstItem="sWR-Fg-1Tg" firstAttribute="leading" secondItem="3yY-1d-Ab9" secondAttribute="leadingMargin" id="Qyc-e2-RfK"/>
+                            <constraint firstItem="sWR-Fg-1Tg" firstAttribute="trailing" secondItem="3yY-1d-Ab9" secondAttribute="trailingMargin" id="xd0-DU-riG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="infoText" destination="sWR-Fg-1Tg" id="GYf-WS-v4k"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KW4-k1-Gs7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2656.8000000000002" y="794.75262368815595"/>
+        </scene>
+        <!--Second View Controller-->
+        <scene sceneID="W8l-8u-uPg">
+            <objects>
+                <viewController storyboardIdentifier="SecondVC" useStoryboardIdentifierAsRestorationIdentifier="YES" id="m6M-uR-2pf" customClass="SecondViewController" customModule="Rune_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="QtU-l7-64K"/>
+                        <viewControllerLayoutGuide type="bottom" id="WR7-Lx-Jai"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ePV-DK-zpK">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="IqC-Fx-6nQ">
+                                <rect key="frame" x="16" y="20" width="343" height="60"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="2e9-bv-nBb">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="60"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="40"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="120"/>
+                                </variation>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fehu" translatesAutoresizingMaskIntoConstraints="NO" id="sCX-xA-9Ks">
+                                <rect key="frame" x="107.5" y="90" width="160" height="180"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="220" id="Qes-Xf-ioU">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="180"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="200" id="hXT-xg-4LS">
+                                        <variation key="heightClass=regular-widthClass=compact" constant="160"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="vuP-Sa-f4y">
+                                <rect key="frame" x="16" y="275" width="343" height="382"/>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="40"/>
+                                </variation>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="vuP-Sa-f4y" firstAttribute="top" secondItem="sCX-xA-9Ks" secondAttribute="bottom" constant="5" id="ASm-Pq-fGB"/>
+                            <constraint firstItem="WR7-Lx-Jai" firstAttribute="top" secondItem="vuP-Sa-f4y" secondAttribute="bottom" constant="10" id="HTo-UY-55n"/>
+                            <constraint firstItem="IqC-Fx-6nQ" firstAttribute="top" secondItem="QtU-l7-64K" secondAttribute="bottom" constant="10" id="Kis-3I-Bl5">
+                                <variation key="heightClass=regular-widthClass=compact" constant="0.0"/>
+                            </constraint>
+                            <constraint firstItem="IqC-Fx-6nQ" firstAttribute="trailing" secondItem="ePV-DK-zpK" secondAttribute="trailingMargin" id="Tdz-NO-dQg"/>
+                            <constraint firstItem="sCX-xA-9Ks" firstAttribute="centerX" secondItem="ePV-DK-zpK" secondAttribute="centerX" id="Zzd-SW-sWT"/>
+                            <constraint firstItem="IqC-Fx-6nQ" firstAttribute="leading" secondItem="ePV-DK-zpK" secondAttribute="leadingMargin" id="k3R-C3-MI7"/>
+                            <constraint firstItem="vuP-Sa-f4y" firstAttribute="leading" secondItem="ePV-DK-zpK" secondAttribute="leadingMargin" id="tLr-Dt-kZN"/>
+                            <constraint firstItem="sCX-xA-9Ks" firstAttribute="top" secondItem="IqC-Fx-6nQ" secondAttribute="bottom" constant="40" id="wgp-7q-cJk">
+                                <variation key="heightClass=regular-widthClass=compact" constant="10"/>
+                            </constraint>
+                            <constraint firstItem="vuP-Sa-f4y" firstAttribute="trailing" secondItem="ePV-DK-zpK" secondAttribute="trailingMargin" id="yCY-5m-as5"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="runeDescriptionLabel" destination="vuP-Sa-f4y" id="zpc-L0-j9E"/>
+                        <outlet property="runeImage" destination="sCX-xA-9Ks" id="cRB-tj-UB9"/>
+                        <outlet property="runeNameLabel" destination="IqC-Fx-6nQ" id="67g-Ot-CBi"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Zg4-ao-J9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2657.971014492754" y="136.14130434782609"/>
+        </scene>
+        <!--Casting-->
+        <scene sceneID="t2V-aP-inq">
+            <objects>
+                <viewController useStoryboardIdentifierAsRestorationIdentifier="YES" id="jun-db-1fb" customClass="CastingViewController" customModule="Rune_Dictionary" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="e83-nV-CHJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="TMd-ie-4aa"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="V6h-hg-jFv">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <segmentedControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bqf-T0-sJB">
+                                <rect key="frame" x="16" y="84" width="343" height="29"/>
+                                <color key="backgroundColor" red="0.84698420760000004" green="0.84710663559999999" blue="0.84695750469999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="28" id="n9Z-C0-XxQ">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="60"/>
+                                    </constraint>
+                                </constraints>
+                                <segments>
+                                    <segment title="One Rune"/>
+                                    <segment title="Three Rune"/>
+                                    <segment title="Five Rune"/>
+                                </segments>
+                                <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <action selector="castType:" destination="jun-db-1fb" eventType="valueChanged" id="pPE-iu-4Cs"/>
+                                </connections>
+                            </segmentedControl>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blank" translatesAutoresizingMaskIntoConstraints="NO" id="l2T-fa-K2u">
+                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="TUw-rp-UFw">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="225"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="100" id="fyr-u9-wX5">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="225"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blank" translatesAutoresizingMaskIntoConstraints="NO" id="qQA-YP-Q7R">
+                                <rect key="frame" x="29.5" y="283.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="C8N-UK-K7o">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="225"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="100" id="wgE-mE-SVb">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="225"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blank" translatesAutoresizingMaskIntoConstraints="NO" id="1dP-aB-TQk">
+                                <rect key="frame" x="245.5" y="283.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="Y3s-9t-am5">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="225"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="100" id="og5-aW-BLM">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="225"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blank" translatesAutoresizingMaskIntoConstraints="NO" id="3Su-8l-Nvx">
+                                <rect key="frame" x="137.5" y="175.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="sj2-BI-9Lx">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="225"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="100" id="yaS-Dz-jiS">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="225"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blank" translatesAutoresizingMaskIntoConstraints="NO" id="gJz-82-hSq">
+                                <rect key="frame" x="137.5" y="391.5" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="5Qz-Qr-3Fm">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="225"/>
+                                    </constraint>
+                                    <constraint firstAttribute="width" constant="100" id="7bT-Lk-GMu">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="225"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGV-gK-ZNm">
+                                <rect key="frame" x="24" y="568" width="327" height="40"/>
+                                <color key="backgroundColor" red="0.84698420763015747" green="0.84710663557052612" blue="0.8469575047492981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="40" id="5PM-t8-PgV">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="75"/>
+                                    </constraint>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                <state key="normal" title="Cast">
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="5"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <variation key="heightClass=regular-widthClass=regular">
+                                    <fontDescription key="fontDescription" name="AvenirNext-Bold" family="Avenir Next" pointSize="50"/>
+                                </variation>
+                                <connections>
+                                    <action selector="castButtonPressed:" destination="jun-db-1fb" eventType="touchUpInside" id="f9U-ps-iXe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="l2T-fa-K2u" firstAttribute="centerY" secondItem="V6h-hg-jFv" secondAttribute="centerY" id="3Kw-BP-ir0"/>
+                            <constraint firstItem="TMd-ie-4aa" firstAttribute="top" secondItem="AGV-gK-ZNm" secondAttribute="bottom" constant="10" id="8PD-ze-ttt">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstItem="bqf-T0-sJB" firstAttribute="leading" secondItem="V6h-hg-jFv" secondAttribute="leadingMargin" id="F9J-dI-jLT"/>
+                            <constraint firstItem="3Su-8l-Nvx" firstAttribute="centerX" secondItem="V6h-hg-jFv" secondAttribute="centerX" id="OjI-ot-FQD"/>
+                            <constraint firstItem="gJz-82-hSq" firstAttribute="top" secondItem="l2T-fa-K2u" secondAttribute="bottom" constant="8" id="Skr-kg-WT8">
+                                <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                            </constraint>
+                            <constraint firstItem="l2T-fa-K2u" firstAttribute="top" secondItem="3Su-8l-Nvx" secondAttribute="bottom" constant="8" id="WQ1-DO-7p3">
+                                <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                            </constraint>
+                            <constraint firstItem="qQA-YP-Q7R" firstAttribute="centerY" secondItem="V6h-hg-jFv" secondAttribute="centerY" id="Zo0-ij-MdN"/>
+                            <constraint firstItem="bqf-T0-sJB" firstAttribute="trailing" secondItem="V6h-hg-jFv" secondAttribute="trailingMargin" id="ZsZ-gk-pTc"/>
+                            <constraint firstItem="gJz-82-hSq" firstAttribute="centerX" secondItem="V6h-hg-jFv" secondAttribute="centerX" id="aKO-4Z-HAQ"/>
+                            <constraint firstItem="bqf-T0-sJB" firstAttribute="top" secondItem="e83-nV-CHJ" secondAttribute="bottom" constant="20" id="bGv-tj-EWd"/>
+                            <constraint firstItem="1dP-aB-TQk" firstAttribute="leading" secondItem="l2T-fa-K2u" secondAttribute="trailing" constant="8" id="e2e-LQ-DH2">
+                                <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                            </constraint>
+                            <constraint firstItem="l2T-fa-K2u" firstAttribute="centerX" secondItem="V6h-hg-jFv" secondAttribute="centerX" id="eIC-Sb-Lj0"/>
+                            <constraint firstItem="1dP-aB-TQk" firstAttribute="centerY" secondItem="V6h-hg-jFv" secondAttribute="centerY" id="nGN-Jy-nmH"/>
+                            <constraint firstItem="l2T-fa-K2u" firstAttribute="leading" secondItem="qQA-YP-Q7R" secondAttribute="trailing" constant="8" id="q4J-bh-ZY7">
+                                <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                            </constraint>
+                            <constraint firstItem="AGV-gK-ZNm" firstAttribute="leading" secondItem="V6h-hg-jFv" secondAttribute="leadingMargin" constant="8" id="rdg-mr-F1f">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                            <constraint firstAttribute="trailingMargin" secondItem="AGV-gK-ZNm" secondAttribute="trailing" constant="8" id="uo0-4M-9Sf">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
+                        </constraints>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Casting" image="Rune" id="lKS-Rc-DhO"/>
+                    <connections>
+                        <outlet property="runeFive" destination="l2T-fa-K2u" id="byS-Gh-DyG"/>
+                        <outlet property="runeFour" destination="1dP-aB-TQk" id="KLC-YM-wCR"/>
+                        <outlet property="runeOne" destination="gJz-82-hSq" id="xZK-ln-ttA"/>
+                        <outlet property="runeThree" destination="3Su-8l-Nvx" id="Htu-Yt-dLe"/>
+                        <outlet property="runeTwo" destination="qQA-YP-Q7R" id="hC8-9o-StD"/>
+                        <outlet property="segmentedControl" destination="bqf-T0-sJB" id="JgG-ww-1a3"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iDr-nU-9Np" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3312.5" y="134.765625"/>
+        </scene>
+        <!--Item-->
+        <scene sceneID="Dtq-uy-CW5">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="T07-MT-j9f" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Item" id="TgY-gE-lUq"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="j2k-q1-D92">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="RQU-tT-vyk" kind="relationship" relationship="rootViewController" id="jrJ-RA-4Iv"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="jAW-Ec-GKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1026" y="136"/>
+        </scene>
+        <!--Rune Dictionary-->
+        <scene sceneID="fM6-8f-vBJ">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="RQU-tT-vyk" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" title="Rune Dictionary" id="6H6-B0-dXM">
+                        <barButtonItem key="rightBarButtonItem" image="Book" id="Miv-Xm-ZJI">
+                            <connections>
+                                <segue destination="hdC-Rj-UOp" kind="show" id="Oc5-bb-VTg"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="QTx-Ir-noX">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="viewControllers" id="Cyw-iu-CoS"/>
+                        <segue destination="jun-db-1fb" kind="relationship" relationship="viewControllers" id="1XO-xh-0xX"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="LLL-FN-2R8" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1025" y="819"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Blank" width="96" height="126"/>
+        <image name="Book" width="25" height="19"/>
+        <image name="Dictionary" width="19" height="23"/>
+        <image name="Fehu" width="96" height="126"/>
+        <image name="Rune" width="19" height="25"/>
+    </resources>
 </document>
