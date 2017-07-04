@@ -1,0 +1,86 @@
+{
+  "stickers" : [
+    {
+      "filename" : "Fehu.sticker"
+    },
+    {
+      "filename" : "Uruz.sticker"
+    },
+    {
+      "filename" : "Thurisaz.sticker"
+    },
+    {
+      "filename" : "Ansuz.sticker"
+    },
+    {
+      "filename" : "Raidho.sticker"
+    },
+    {
+      "filename" : "Kenaz.sticker"
+    },
+    {
+      "filename" : "Gebo.sticker"
+    },
+    {
+      "filename" : "Wunjo.sticker"
+    },
+    {
+      "filename" : "Hagalaz.sticker"
+    },
+    {
+      "filename" : "Nauthiz.sticker"
+    },
+    {
+      "filename" : "Isa.sticker"
+    },
+    {
+      "filename" : "Jera.sticker"
+    },
+    {
+      "filename" : "Eihwaz.sticker"
+    },
+    {
+      "filename" : "Perthro.sticker"
+    },
+    {
+      "filename" : "Algiz.sticker"
+    },
+    {
+      "filename" : "Sowilo.sticker"
+    },
+    {
+      "filename" : "Tiwaz.sticker"
+    },
+    {
+      "filename" : "Berkano.sticker"
+    },
+    {
+      "filename" : "Ehwaz.sticker"
+    },
+    {
+      "filename" : "Mannaz.sticker"
+    },
+    {
+      "filename" : "Laguz.sticker"
+    },
+    {
+      "filename" : "Ingwaz.sticker"
+    },
+    {
+      "filename" : "Dagaz.sticker"
+    },
+    {
+      "filename" : "Othala.sticker"
+    },
+    {
+      "filename" : "Blank.sticker"
+    }
+  ],
+  "info" : {
+    "version" : 1,
+    "author" : "xcode"
+  },
+  "properties" : {
+    "grid-size" : "regular"
+  }
+}
