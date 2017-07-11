@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1E16229B1F14F5BB007D777B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76BDD51F14F104006560AA /* InterfaceController.swift */; };
+		1E1622A11F14F72C007D777B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E76BDD91F14F104006560AA /* Assets.xcassets */; };
+		1E1622A31F14F9AF007D777B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E76BDC91F14F104006560AA /* Assets.xcassets */; };
 		1E2722E61F0BC7A5003BD7F3 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E2722E51F0BC7A5003BD7F3 /* Stickers.xcassets */; };
 		1E2722EA1F0BC7A5003BD7F3 /* Rune Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1E2722E31F0BC7A5003BD7F3 /* Rune Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1E3E164F1EFDCC5B00BF6774 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3E164E1EFDCC5B00BF6774 /* AppDelegate.swift */; };
@@ -16,6 +19,11 @@
 		1E3E16591EFDCC5B00BF6774 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E16571EFDCC5B00BF6774 /* LaunchScreen.storyboard */; };
 		1E3E16611EFDCDBC00BF6774 /* Rune.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3E16601EFDCDBC00BF6774 /* Rune.swift */; };
 		1E4404B91EFDD51400A8193E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4404B81EFDD51400A8193E /* SecondViewController.swift */; };
+		1E76BDC81F14F104006560AA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E76BDC61F14F104006560AA /* Interface.storyboard */; };
+		1E76BDD11F14F104006560AA /* Rune Cast Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1E76BDD01F14F104006560AA /* Rune Cast Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		1E76BDD61F14F104006560AA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76BDD51F14F104006560AA /* InterfaceController.swift */; };
+		1E76BDD81F14F104006560AA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76BDD71F14F104006560AA /* ExtensionDelegate.swift */; };
+		1E76BDDE1F14F104006560AA /* Rune Cast.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1E76BDC41F14F104006560AA /* Rune Cast.app */; };
 		1EC1BCB51F06F21900F19EFB /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1BCB41F06F21900F19EFB /* InfoViewController.swift */; };
 		1ECE205A1F06C02C009CC2D8 /* CastingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECE20591F06C02C009CC2D8 /* CastingViewController.swift */; };
 /* End PBXBuildFile section */
@@ -27,6 +35,20 @@
 			proxyType = 1;
 			remoteGlobalIDString = 1E2722E21F0BC7A5003BD7F3;
 			remoteInfo = "Rune Stickers";
+		};
+		1E76BDD21F14F104006560AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E3E16431EFDCC5B00BF6774 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E76BDCF1F14F104006560AA;
+			remoteInfo = "Rune Cast Extension";
+		};
+		1E76BDDC1F14F104006560AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1E3E16431EFDCC5B00BF6774 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1E76BDC31F14F104006560AA;
+			remoteInfo = "Rune Cast";
 		};
 /* End PBXContainerItemProxy section */
 
@@ -40,6 +62,28 @@
 				1E2722EA1F0BC7A5003BD7F3 /* Rune Stickers.appex in Embed App Extensions */,
 			);
 			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E76BDE41F14F104006560AA /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				1E76BDD11F14F104006560AA /* Rune Cast Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E76BDE61F14F104006560AA /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				1E76BDDE1F14F104006560AA /* Rune Cast.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -57,12 +101,28 @@
 		1E3E165A1EFDCC5B00BF6774 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1E3E16601EFDCDBC00BF6774 /* Rune.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Rune.swift; sourceTree = "<group>"; };
 		1E4404B81EFDD51400A8193E /* SecondViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		1E76BDC41F14F104006560AA /* Rune Cast.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rune Cast.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E76BDC71F14F104006560AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		1E76BDC91F14F104006560AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E76BDCB1F14F104006560AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1E76BDD01F14F104006560AA /* Rune Cast Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Rune Cast Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1E76BDD51F14F104006560AA /* InterfaceController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InterfaceController.swift; sourceTree = "<group>"; };
+		1E76BDD71F14F104006560AA /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		1E76BDD91F14F104006560AA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1E76BDDB1F14F104006560AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EC1BCB41F06F21900F19EFB /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		1ECE20591F06C02C009CC2D8 /* CastingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastingViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
 		1E3E16481EFDCC5B00BF6774 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E76BDCD1F14F104006560AA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -86,6 +146,8 @@
 			children = (
 				1E3E164D1EFDCC5B00BF6774 /* Rune Dictionary */,
 				1E2722E41F0BC7A5003BD7F3 /* Rune Stickers */,
+				1E76BDC51F14F104006560AA /* Rune Cast */,
+				1E76BDD41F14F104006560AA /* Rune Cast Extension */,
 				1E3E164C1EFDCC5B00BF6774 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -95,6 +157,8 @@
 			children = (
 				1E3E164B1EFDCC5B00BF6774 /* Rune Dictionary.app */,
 				1E2722E31F0BC7A5003BD7F3 /* Rune Stickers.appex */,
+				1E76BDC41F14F104006560AA /* Rune Cast.app */,
+				1E76BDD01F14F104006560AA /* Rune Cast Extension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -114,6 +178,27 @@
 				1E3E165A1EFDCC5B00BF6774 /* Info.plist */,
 			);
 			path = "Rune Dictionary";
+			sourceTree = "<group>";
+		};
+		1E76BDC51F14F104006560AA /* Rune Cast */ = {
+			isa = PBXGroup;
+			children = (
+				1E76BDC61F14F104006560AA /* Interface.storyboard */,
+				1E76BDC91F14F104006560AA /* Assets.xcassets */,
+				1E76BDCB1F14F104006560AA /* Info.plist */,
+			);
+			path = "Rune Cast";
+			sourceTree = "<group>";
+		};
+		1E76BDD41F14F104006560AA /* Rune Cast Extension */ = {
+			isa = PBXGroup;
+			children = (
+				1E76BDD51F14F104006560AA /* InterfaceController.swift */,
+				1E76BDD71F14F104006560AA /* ExtensionDelegate.swift */,
+				1E76BDD91F14F104006560AA /* Assets.xcassets */,
+				1E76BDDB1F14F104006560AA /* Info.plist */,
+			);
+			path = "Rune Cast Extension";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -142,16 +227,52 @@
 				1E3E16481EFDCC5B00BF6774 /* Frameworks */,
 				1E3E16491EFDCC5B00BF6774 /* Resources */,
 				1E2722EE1F0BC7A5003BD7F3 /* Embed App Extensions */,
+				1E76BDE61F14F104006560AA /* Embed Watch Content */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 				1E2722E91F0BC7A5003BD7F3 /* PBXTargetDependency */,
+				1E76BDDD1F14F104006560AA /* PBXTargetDependency */,
 			);
 			name = "Rune Dictionary";
 			productName = "Rune Dictionary";
 			productReference = 1E3E164B1EFDCC5B00BF6774 /* Rune Dictionary.app */;
 			productType = "com.apple.product-type.application";
+		};
+		1E76BDC31F14F104006560AA /* Rune Cast */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E76BDE51F14F104006560AA /* Build configuration list for PBXNativeTarget "Rune Cast" */;
+			buildPhases = (
+				1E76BDC21F14F104006560AA /* Resources */,
+				1E76BDE41F14F104006560AA /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1E76BDD31F14F104006560AA /* PBXTargetDependency */,
+			);
+			name = "Rune Cast";
+			productName = "Rune Cast";
+			productReference = 1E76BDC41F14F104006560AA /* Rune Cast.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		1E76BDCF1F14F104006560AA /* Rune Cast Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1E76BDE31F14F104006560AA /* Build configuration list for PBXNativeTarget "Rune Cast Extension" */;
+			buildPhases = (
+				1E76BDCC1F14F104006560AA /* Sources */,
+				1E76BDCD1F14F104006560AA /* Frameworks */,
+				1E76BDCE1F14F104006560AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Rune Cast Extension";
+			productName = "Rune Cast Extension";
+			productReference = 1E76BDD01F14F104006560AA /* Rune Cast Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
 		};
 /* End PBXNativeTarget section */
 
@@ -168,6 +289,16 @@
 						DevelopmentTeam = 8GT4MJG4L6;
 					};
 					1E3E164A1EFDCC5B00BF6774 = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8GT4MJG4L6;
+						ProvisioningStyle = Automatic;
+					};
+					1E76BDC31F14F104006560AA = {
+						CreatedOnToolsVersion = 8.3.3;
+						DevelopmentTeam = 8GT4MJG4L6;
+						ProvisioningStyle = Automatic;
+					};
+					1E76BDCF1F14F104006560AA = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 8GT4MJG4L6;
 						ProvisioningStyle = Automatic;
@@ -189,6 +320,8 @@
 			targets = (
 				1E3E164A1EFDCC5B00BF6774 /* Rune Dictionary */,
 				1E2722E21F0BC7A5003BD7F3 /* Rune Stickers */,
+				1E76BDC31F14F104006560AA /* Rune Cast */,
+				1E76BDCF1F14F104006560AA /* Rune Cast Extension */,
 			);
 		};
 /* End PBXProject section */
@@ -212,6 +345,23 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		1E76BDC21F14F104006560AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E1622A31F14F9AF007D777B /* Assets.xcassets in Resources */,
+				1E76BDC81F14F104006560AA /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E76BDCE1F14F104006560AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E1622A11F14F72C007D777B /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -222,9 +372,19 @@
 				1E4404B91EFDD51400A8193E /* SecondViewController.swift in Sources */,
 				1E3E16611EFDCDBC00BF6774 /* Rune.swift in Sources */,
 				1ECE205A1F06C02C009CC2D8 /* CastingViewController.swift in Sources */,
+				1E16229B1F14F5BB007D777B /* InterfaceController.swift in Sources */,
 				1E3E16511EFDCC5B00BF6774 /* ViewController.swift in Sources */,
 				1EC1BCB51F06F21900F19EFB /* InfoViewController.swift in Sources */,
 				1E3E164F1EFDCC5B00BF6774 /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1E76BDCC1F14F104006560AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1E76BDD81F14F104006560AA /* ExtensionDelegate.swift in Sources */,
+				1E76BDD61F14F104006560AA /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -235,6 +395,16 @@
 			isa = PBXTargetDependency;
 			target = 1E2722E21F0BC7A5003BD7F3 /* Rune Stickers */;
 			targetProxy = 1E2722E81F0BC7A5003BD7F3 /* PBXContainerItemProxy */;
+		};
+		1E76BDD31F14F104006560AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E76BDCF1F14F104006560AA /* Rune Cast Extension */;
+			targetProxy = 1E76BDD21F14F104006560AA /* PBXContainerItemProxy */;
+		};
+		1E76BDDD1F14F104006560AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1E76BDC31F14F104006560AA /* Rune Cast */;
+			targetProxy = 1E76BDDC1F14F104006560AA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -253,6 +423,14 @@
 				1E3E16581EFDCC5B00BF6774 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		1E76BDC61F14F104006560AA /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1E76BDC71F14F104006560AA /* Base */,
+			);
+			name = Interface.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -425,6 +603,78 @@
 			};
 			name = Release;
 		};
+		1E76BDDF1F14F104006560AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8GT4MJG4L6;
+				IBSC_MODULE = Rune_Cast_Extension;
+				INFOPLIST_FILE = "Rune Cast/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ryanball.Rune-Dictionary.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		1E76BDE01F14F104006560AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = 8GT4MJG4L6;
+				IBSC_MODULE = Rune_Cast_Extension;
+				INFOPLIST_FILE = "Rune Cast/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ryanball.Rune-Dictionary.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
+		1E76BDE11F14F104006560AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 8GT4MJG4L6;
+				INFOPLIST_FILE = "Rune Cast Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ryanball.Rune-Dictionary.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Debug;
+		};
+		1E76BDE21F14F104006560AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				DEVELOPMENT_TEAM = 8GT4MJG4L6;
+				INFOPLIST_FILE = "Rune Cast Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @executable_path/../../Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "net.ryanball.Rune-Dictionary.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 3.2;
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -451,6 +701,24 @@
 			buildConfigurations = (
 				1E3E165E1EFDCC5B00BF6774 /* Debug */,
 				1E3E165F1EFDCC5B00BF6774 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E76BDE31F14F104006560AA /* Build configuration list for PBXNativeTarget "Rune Cast Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E76BDE11F14F104006560AA /* Debug */,
+				1E76BDE21F14F104006560AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1E76BDE51F14F104006560AA /* Build configuration list for PBXNativeTarget "Rune Cast" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1E76BDDF1F14F104006560AA /* Debug */,
+				1E76BDE01F14F104006560AA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

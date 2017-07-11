@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13156.6" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13137.5"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13040"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Rune_Cast" customModuleProvider="target">
+                    <items>
+                        <imageView height="110" alignment="center" image="Blank" contentMode="scaleAspectFit" id="YmS-jF-FIt"/>
+                        <button width="1" alignment="center" verticalAlignment="bottom" title="Cast A Rune" id="vAs-Xl-buL">
+                            <connections>
+                                <action selector="runeCastButton" destination="AgC-eL-Hgc" id="TTb-8a-2m8"/>
+                            </connections>
+                        </button>
+                    </items>
+                    <connections>
+                        <outlet property="runeImage" destination="YmS-jF-FIt" id="OK0-uA-BsY"/>
+                    </connections>
+                </controller>
+            </objects>
+            <point key="canvasLocation" x="34" y="37.5"/>
+        </scene>
+    </scenes>
+</document>
