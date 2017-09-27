@@ -20,9 +20,10 @@
 		1E4404B91EFDD51400A8193E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4404B81EFDD51400A8193E /* SecondViewController.swift */; };
 		1E76BDC81F14F104006560AA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E76BDC61F14F104006560AA /* Interface.storyboard */; };
 		1E76BDD11F14F104006560AA /* Rune Cast Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1E76BDD01F14F104006560AA /* Rune Cast Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		1E76BDD61F14F104006560AA /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76BDD51F14F104006560AA /* InterfaceController.swift */; };
 		1E76BDD81F14F104006560AA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76BDD71F14F104006560AA /* ExtensionDelegate.swift */; };
 		1E76BDDE1F14F104006560AA /* Rune Cast.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1E76BDC41F14F104006560AA /* Rune Cast.app */; };
+		1E8EB7D31F7C4CEB0029AA28 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76BDD51F14F104006560AA /* InterfaceController.swift */; };
+		1E8EB7D41F7C4D0D0029AA28 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E76BDC91F14F104006560AA /* Assets.xcassets */; };
 		1EC1BCB51F06F21900F19EFB /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1BCB41F06F21900F19EFB /* InfoViewController.swift */; };
 		1ECE205A1F06C02C009CC2D8 /* CastingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECE20591F06C02C009CC2D8 /* CastingViewController.swift */; };
 		1EEDD8DB1F7BCAF5006C8337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E76BDD91F14F104006560AA /* Assets.xcassets */; };
@@ -361,6 +362,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E8EB7D41F7C4D0D0029AA28 /* Assets.xcassets in Resources */,
 				1EEDD8DB1F7BCAF5006C8337 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -387,7 +389,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E76BDD81F14F104006560AA /* ExtensionDelegate.swift in Sources */,
-				1E76BDD61F14F104006560AA /* InterfaceController.swift in Sources */,
+				1E8EB7D31F7C4CEB0029AA28 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
