@@ -45,22 +45,31 @@ class CastingViewController: UIViewController {
     @IBOutlet weak var runeThree: UIImageView!
     @IBOutlet weak var runeFour: UIImageView!
     @IBOutlet weak var runeFive: UIImageView!
+    @IBOutlet weak var runeSix: UIImageView!
+    @IBOutlet weak var runeSeven: UIImageView!
+    @IBOutlet weak var runeEight: UIImageView!
+    @IBOutlet weak var runeNine: UIImageView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        if #available(iOS 11.0, *) {
+            navigationController?.navigationBar.prefersLargeTitles = false
+        } else {
+            // Fallback on earlier versions
+        }
         
     }
     
     override func viewWillAppear(_ animated: Bool) {
         segmentedControl.selectedSegmentIndex = 0
-        oneRuneCast()
+        odinCast()
     }
     
     var runeCast = 0
     
-    func oneRuneCast() {
+    func odinCast() {
         
         runeCast = 1
         runeOne.isHidden = true
@@ -69,10 +78,15 @@ class CastingViewController: UIViewController {
         runeFour.isHidden = true
         runeFive.isHidden = false
         runeFive.image = #imageLiteral(resourceName: "Blank")
+        runeSix.isHidden = true
+        runeSeven.isHidden = true
+        runeEight.isHidden = true
+        runeNine.isHidden = true
+
         
     }
     
-    func threeRuneCast() {
+    func nornCast() {
         
         runeCast = 3
         runeOne.isHidden = true
@@ -83,10 +97,14 @@ class CastingViewController: UIViewController {
         runeFour.image = #imageLiteral(resourceName: "Blank")
         runeFive.isHidden = false
         runeFive.image = #imageLiteral(resourceName: "Blank")
+        runeSix.isHidden = true
+        runeSeven.isHidden = true
+        runeEight.isHidden = true
+        runeNine.isHidden = true
         
     }
     
-    func fiveRuneCast() {
+    func tyrCast() {
         
         runeCast = 5
         runeOne.isHidden = false
@@ -99,6 +117,32 @@ class CastingViewController: UIViewController {
         runeFour.image = #imageLiteral(resourceName: "Blank")
         runeFive.isHidden = false
         runeFive.image = #imageLiteral(resourceName: "Blank")
+        runeSix.isHidden = true
+        runeSeven.isHidden = true
+        runeEight.isHidden = true
+        runeNine.isHidden = true
+        
+    }
+    
+    func freyjaCast() {
+        
+        runeCast = 7
+        runeOne.isHidden = true
+        runeTwo.isHidden = false
+        runeTwo.image = #imageLiteral(resourceName: "Blank")
+        runeThree.isHidden = true
+        runeFour.isHidden = false
+        runeFour.image = #imageLiteral(resourceName: "Blank")
+        runeFive.isHidden = false
+        runeFive.image = #imageLiteral(resourceName: "Blank")
+        runeSix.isHidden = false
+        runeSix.image = #imageLiteral(resourceName: "Blank")
+        runeSeven.isHidden = false
+        runeSeven.image = #imageLiteral(resourceName: "Blank")
+        runeEight.isHidden = false
+        runeEight.image = #imageLiteral(resourceName: "Blank")
+        runeNine.isHidden = false
+        runeNine.image = #imageLiteral(resourceName: "Blank")
         
     }
     
@@ -106,11 +150,13 @@ class CastingViewController: UIViewController {
         
         switch segmentedControl.selectedSegmentIndex {
         case 0:
-            oneRuneCast()
+            odinCast()
         case 1:
-            threeRuneCast()
+            nornCast()
         case 2:
-            fiveRuneCast()
+            tyrCast()
+        case 3:
+            freyjaCast()
         default: break
         }
         
@@ -156,7 +202,25 @@ class CastingViewController: UIViewController {
             runeFour.image = runesCastArray[3]
             runeFive.image = runesCastArray[4]
             
-        } else {
+        }
+        
+        else if runeCast == 7 {
+            
+            for _ in 0...6 {
+                
+                let randomRunes = runesArray[Int(arc4random_uniform(UInt32(runesArray.count)))]
+                runesCastArray.append(randomRunes.runeImage)
+            }
+            
+            runeTwo.image = runesCastArray[0]
+            runeFour.image = runesCastArray[1]
+            runeFive.image = runesCastArray[2]
+            runeSix.image = runesCastArray[3]
+            runeSeven.image = runesCastArray[4]
+            runeEight.image = runesCastArray[5]
+            runeNine.image = runesCastArray[6]
+            
+        }else {
             print(" Invalid Number")
         }
         

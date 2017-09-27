@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		1E16229B1F14F5BB007D777B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76BDD51F14F104006560AA /* InterfaceController.swift */; };
-		1E1622A11F14F72C007D777B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E76BDD91F14F104006560AA /* Assets.xcassets */; };
 		1E1622A31F14F9AF007D777B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E76BDC91F14F104006560AA /* Assets.xcassets */; };
 		1E2722E61F0BC7A5003BD7F3 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E2722E51F0BC7A5003BD7F3 /* Stickers.xcassets */; };
 		1E2722EA1F0BC7A5003BD7F3 /* Rune Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1E2722E31F0BC7A5003BD7F3 /* Rune Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -26,6 +25,7 @@
 		1E76BDDE1F14F104006560AA /* Rune Cast.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1E76BDC41F14F104006560AA /* Rune Cast.app */; };
 		1EC1BCB51F06F21900F19EFB /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1BCB41F06F21900F19EFB /* InfoViewController.swift */; };
 		1ECE205A1F06C02C009CC2D8 /* CastingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECE20591F06C02C009CC2D8 /* CastingViewController.swift */; };
+		1EEDD8DB1F7BCAF5006C8337 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E76BDD91F14F104006560AA /* Assets.xcassets */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -281,7 +281,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0900;
 				ORGANIZATIONNAME = "Ryan Ball";
 				TargetAttributes = {
 					1E2722E21F0BC7A5003BD7F3 = {
@@ -291,16 +291,19 @@
 					1E3E164A1EFDCC5B00BF6774 = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 8GT4MJG4L6;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					1E76BDC31F14F104006560AA = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 8GT4MJG4L6;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 					1E76BDCF1F14F104006560AA = {
 						CreatedOnToolsVersion = 8.3.3;
 						DevelopmentTeam = 8GT4MJG4L6;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -358,7 +361,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E1622A11F14F72C007D777B /* Assets.xcassets in Resources */,
+				1EEDD8DB1F7BCAF5006C8337 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -490,7 +493,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -498,7 +503,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -541,7 +550,9 @@
 				CLANG_CXX_LIBRARY = "libc++";
 				CLANG_ENABLE_MODULES = YES;
 				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
 				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
@@ -549,7 +560,11 @@
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
@@ -585,7 +600,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ryanball.Rune-Dictionary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -599,7 +615,8 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "net.ryanball.Rune-Dictionary";
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 			};
 			name = Release;
 		};
@@ -616,7 +633,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.2;
 			};
@@ -635,7 +653,8 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = On;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.2;
 			};
@@ -652,7 +671,8 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.2;
 			};
@@ -669,7 +689,8 @@
 				PRODUCT_NAME = "${TARGET_NAME}";
 				SDKROOT = watchos;
 				SKIP_INSTALL = YES;
-				SWIFT_VERSION = 3.0;
+				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
+				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = 4;
 				WATCHOS_DEPLOYMENT_TARGET = 3.2;
 			};

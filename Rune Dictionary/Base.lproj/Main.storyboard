@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.19" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="T07-MT-j9f">
-    <device id="retina4_7" orientation="portrait">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13196" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="T07-MT-j9f">
+    <device id="ipad12_9" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.16"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13173"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -25,18 +25,18 @@
                         <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" separatorStyle="default" rowHeight="44" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="yoe-wa-NQL">
-                                <rect key="frame" x="0.0" y="64" width="375" height="554"/>
+                                <rect key="frame" x="0.0" y="64" width="1024" height="1253"/>
                                 <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" id="z71-OM-QQu">
-                                        <rect key="frame" x="0.0" y="55.5" width="375" height="44"/>
+                                        <rect key="frame" x="0.0" y="55.5" width="1024" height="44"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="z71-OM-QQu" id="oaW-gN-ygg">
-                                            <rect key="frame" x="0.0" y="0.0" width="375" height="43.5"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="1024" height="43.5"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                         </tableViewCellContentView>
                                     </tableViewCell>
@@ -73,11 +73,11 @@
                         <viewControllerLayoutGuide type="bottom" id="1J7-ma-6uV"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="3yY-1d-Ab9">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWR-Fg-1Tg">
-                                <rect key="frame" x="16" y="72" width="343" height="575"/>
+                                <rect key="frame" x="20" y="72" width="984" height="1274"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="How To Do A Reading">
@@ -393,11 +393,11 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                         <viewControllerLayoutGuide type="bottom" id="WR7-Lx-Jai"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="ePV-DK-zpK">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="30" translatesAutoresizingMaskIntoConstraints="NO" id="IqC-Fx-6nQ">
-                                <rect key="frame" x="16" y="20" width="343" height="60"/>
+                                <rect key="frame" x="20" y="30" width="984" height="140"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="140" id="2e9-bv-nBb">
                                         <variation key="heightClass=regular-widthClass=compact" constant="60"/>
@@ -411,7 +411,7 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                                 </variation>
                             </label>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Fehu" translatesAutoresizingMaskIntoConstraints="NO" id="sCX-xA-9Ks">
-                                <rect key="frame" x="107.5" y="90" width="160" height="180"/>
+                                <rect key="frame" x="412" y="210" width="200" height="220"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="220" id="Qes-Xf-ioU">
                                         <variation key="heightClass=regular-widthClass=compact" constant="180"/>
@@ -422,7 +422,7 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                                 </constraints>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="10" translatesAutoresizingMaskIntoConstraints="NO" id="vuP-Sa-f4y">
-                                <rect key="frame" x="16" y="275" width="343" height="382"/>
+                                <rect key="frame" x="20" y="435" width="984" height="921"/>
                                 <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -467,11 +467,11 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                         <viewControllerLayoutGuide type="bottom" id="TMd-ie-4aa"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="V6h-hg-jFv">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="1366"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <segmentedControl opaque="NO" contentMode="scaleToFill" selected="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="plain" selectedSegmentIndex="0" translatesAutoresizingMaskIntoConstraints="NO" id="bqf-T0-sJB">
-                                <rect key="frame" x="16" y="84" width="343" height="29"/>
+                                <rect key="frame" x="20" y="84" width="984" height="61"/>
                                 <color key="backgroundColor" red="0.84698420760000004" green="0.84710663559999999" blue="0.84695750469999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="28" id="n9Z-C0-XxQ">
@@ -479,9 +479,10 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                                     </constraint>
                                 </constraints>
                                 <segments>
-                                    <segment title="One Rune"/>
-                                    <segment title="Three Rune"/>
-                                    <segment title="Five Rune"/>
+                                    <segment title="Odin Cast"/>
+                                    <segment title="Norn Cast"/>
+                                    <segment title="Tyr Cast"/>
+                                    <segment title="Freyja Cast"/>
                                 </segments>
                                 <color key="tintColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 <connections>
@@ -489,7 +490,7 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                                 </connections>
                             </segmentedControl>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blank" translatesAutoresizingMaskIntoConstraints="NO" id="l2T-fa-K2u">
-                                <rect key="frame" x="137.5" y="283.5" width="100" height="100"/>
+                                <rect key="frame" x="399.5" y="570.5" width="225" height="225"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="TUw-rp-UFw">
                                         <variation key="heightClass=regular-widthClass=regular" constant="225"/>
@@ -500,7 +501,7 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blank" translatesAutoresizingMaskIntoConstraints="NO" id="qQA-YP-Q7R">
-                                <rect key="frame" x="29.5" y="283.5" width="100" height="100"/>
+                                <rect key="frame" x="149.5" y="570.5" width="225" height="225"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="C8N-UK-K7o">
                                         <variation key="heightClass=regular-widthClass=regular" constant="225"/>
@@ -511,7 +512,7 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blank" translatesAutoresizingMaskIntoConstraints="NO" id="1dP-aB-TQk">
-                                <rect key="frame" x="245.5" y="283.5" width="100" height="100"/>
+                                <rect key="frame" x="649.5" y="570.5" width="225" height="225"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="Y3s-9t-am5">
                                         <variation key="heightClass=regular-widthClass=regular" constant="225"/>
@@ -522,7 +523,7 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blank" translatesAutoresizingMaskIntoConstraints="NO" id="3Su-8l-Nvx">
-                                <rect key="frame" x="137.5" y="175.5" width="100" height="100"/>
+                                <rect key="frame" x="399.5" y="320.5" width="225" height="225"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="100" id="sj2-BI-9Lx">
                                         <variation key="heightClass=regular-widthClass=regular" constant="225"/>
@@ -533,7 +534,7 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                                 </constraints>
                             </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blank" translatesAutoresizingMaskIntoConstraints="NO" id="gJz-82-hSq">
-                                <rect key="frame" x="137.5" y="391.5" width="100" height="100"/>
+                                <rect key="frame" x="399.5" y="820.5" width="225" height="225"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="100" id="5Qz-Qr-3Fm">
                                         <variation key="heightClass=regular-widthClass=regular" constant="225"/>
@@ -544,7 +545,7 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                                 </constraints>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="AGV-gK-ZNm">
-                                <rect key="frame" x="24" y="568" width="327" height="40"/>
+                                <rect key="frame" x="40" y="1222" width="944" height="75"/>
                                 <color key="backgroundColor" red="0.84698420763015747" green="0.84710663557052612" blue="0.8469575047492981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="40" id="5PM-t8-PgV">
@@ -567,30 +568,100 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                                     <action selector="castButtonPressed:" destination="jun-db-1fb" eventType="touchUpInside" id="f9U-ps-iXe"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blank" translatesAutoresizingMaskIntoConstraints="NO" id="nWv-a1-phy">
+                                <rect key="frame" x="149.5" y="820.5" width="225" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Ce6-VC-M7d">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="225"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="100" id="ZaM-S2-vaB">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="225"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blank" translatesAutoresizingMaskIntoConstraints="NO" id="3oB-fR-sSv">
+                                <rect key="frame" x="649.5" y="320.5" width="225" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="Q3i-UB-dBN">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="225"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="100" id="nnZ-nm-Ady">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="225"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blank" translatesAutoresizingMaskIntoConstraints="NO" id="u0l-1E-uNn">
+                                <rect key="frame" x="649.5" y="820.5" width="225" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="FOU-KO-JNO">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="225"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="100" id="UfB-cZ-WRu">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="225"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Blank" translatesAutoresizingMaskIntoConstraints="NO" id="F9Q-Y9-C7S">
+                                <rect key="frame" x="149.5" y="320.5" width="225" height="225"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="OJc-LR-Us4">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="225"/>
+                                    </constraint>
+                                    <constraint firstAttribute="height" constant="100" id="h1m-8p-rv5">
+                                        <variation key="heightClass=regular-widthClass=regular" constant="225"/>
+                                    </constraint>
+                                </constraints>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="l2T-fa-K2u" firstAttribute="centerY" secondItem="V6h-hg-jFv" secondAttribute="centerY" id="3Kw-BP-ir0"/>
+                            <constraint firstItem="nWv-a1-phy" firstAttribute="top" secondItem="qQA-YP-Q7R" secondAttribute="bottom" constant="8" id="6Fa-kL-x8T">
+                                <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                            </constraint>
                             <constraint firstItem="TMd-ie-4aa" firstAttribute="top" secondItem="AGV-gK-ZNm" secondAttribute="bottom" constant="10" id="8PD-ze-ttt">
                                 <variation key="heightClass=regular-widthClass=regular" constant="20"/>
                             </constraint>
+                            <constraint firstItem="gJz-82-hSq" firstAttribute="leading" secondItem="nWv-a1-phy" secondAttribute="trailing" constant="8" id="9Rb-ui-oxs">
+                                <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                            </constraint>
+                            <constraint firstItem="1dP-aB-TQk" firstAttribute="top" secondItem="3oB-fR-sSv" secondAttribute="bottom" constant="8" id="Afj-eE-5RQ">
+                                <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                            </constraint>
                             <constraint firstItem="bqf-T0-sJB" firstAttribute="leading" secondItem="V6h-hg-jFv" secondAttribute="leadingMargin" id="F9J-dI-jLT"/>
                             <constraint firstItem="3Su-8l-Nvx" firstAttribute="centerX" secondItem="V6h-hg-jFv" secondAttribute="centerX" id="OjI-ot-FQD"/>
+                            <constraint firstItem="u0l-1E-uNn" firstAttribute="top" secondItem="1dP-aB-TQk" secondAttribute="bottom" constant="8" id="Ojg-eN-2s5">
+                                <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                            </constraint>
                             <constraint firstItem="gJz-82-hSq" firstAttribute="top" secondItem="l2T-fa-K2u" secondAttribute="bottom" constant="8" id="Skr-kg-WT8">
+                                <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                            </constraint>
+                            <constraint firstItem="3Su-8l-Nvx" firstAttribute="leading" secondItem="F9Q-Y9-C7S" secondAttribute="trailing" constant="8" id="W2m-EI-0TQ">
                                 <variation key="heightClass=regular-widthClass=regular" constant="25"/>
                             </constraint>
                             <constraint firstItem="l2T-fa-K2u" firstAttribute="top" secondItem="3Su-8l-Nvx" secondAttribute="bottom" constant="8" id="WQ1-DO-7p3">
                                 <variation key="heightClass=regular-widthClass=regular" constant="25"/>
                             </constraint>
+                            <constraint firstItem="3oB-fR-sSv" firstAttribute="leading" secondItem="3Su-8l-Nvx" secondAttribute="trailing" constant="8" id="ZPb-Ic-8bu">
+                                <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                            </constraint>
                             <constraint firstItem="qQA-YP-Q7R" firstAttribute="centerY" secondItem="V6h-hg-jFv" secondAttribute="centerY" id="Zo0-ij-MdN"/>
                             <constraint firstItem="bqf-T0-sJB" firstAttribute="trailing" secondItem="V6h-hg-jFv" secondAttribute="trailingMargin" id="ZsZ-gk-pTc"/>
                             <constraint firstItem="gJz-82-hSq" firstAttribute="centerX" secondItem="V6h-hg-jFv" secondAttribute="centerX" id="aKO-4Z-HAQ"/>
-                            <constraint firstItem="bqf-T0-sJB" firstAttribute="top" secondItem="e83-nV-CHJ" secondAttribute="bottom" constant="20" id="bGv-tj-EWd"/>
+                            <constraint firstItem="bqf-T0-sJB" firstAttribute="top" secondItem="e83-nV-CHJ" secondAttribute="bottom" constant="10" id="bGv-tj-EWd">
+                                <variation key="heightClass=regular-widthClass=regular" constant="20"/>
+                            </constraint>
                             <constraint firstItem="1dP-aB-TQk" firstAttribute="leading" secondItem="l2T-fa-K2u" secondAttribute="trailing" constant="8" id="e2e-LQ-DH2">
                                 <variation key="heightClass=regular-widthClass=regular" constant="25"/>
                             </constraint>
                             <constraint firstItem="l2T-fa-K2u" firstAttribute="centerX" secondItem="V6h-hg-jFv" secondAttribute="centerX" id="eIC-Sb-Lj0"/>
+                            <constraint firstItem="u0l-1E-uNn" firstAttribute="leading" secondItem="gJz-82-hSq" secondAttribute="trailing" constant="8" id="l79-cO-EX8">
+                                <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                            </constraint>
                             <constraint firstItem="1dP-aB-TQk" firstAttribute="centerY" secondItem="V6h-hg-jFv" secondAttribute="centerY" id="nGN-Jy-nmH"/>
+                            <constraint firstItem="qQA-YP-Q7R" firstAttribute="top" secondItem="F9Q-Y9-C7S" secondAttribute="bottom" constant="8" id="peT-Mw-9pT">
+                                <variation key="heightClass=regular-widthClass=regular" constant="25"/>
+                            </constraint>
                             <constraint firstItem="l2T-fa-K2u" firstAttribute="leading" secondItem="qQA-YP-Q7R" secondAttribute="trailing" constant="8" id="q4J-bh-ZY7">
                                 <variation key="heightClass=regular-widthClass=regular" constant="25"/>
                             </constraint>
@@ -604,9 +675,13 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                     </view>
                     <tabBarItem key="tabBarItem" title="Casting" image="Rune" id="lKS-Rc-DhO"/>
                     <connections>
+                        <outlet property="runeEight" destination="nWv-a1-phy" id="P26-jr-udo"/>
                         <outlet property="runeFive" destination="l2T-fa-K2u" id="byS-Gh-DyG"/>
                         <outlet property="runeFour" destination="1dP-aB-TQk" id="KLC-YM-wCR"/>
+                        <outlet property="runeNine" destination="u0l-1E-uNn" id="vy1-hh-ytB"/>
                         <outlet property="runeOne" destination="gJz-82-hSq" id="xZK-ln-ttA"/>
+                        <outlet property="runeSeven" destination="3oB-fR-sSv" id="yqs-iL-SsV"/>
+                        <outlet property="runeSix" destination="F9Q-Y9-C7S" id="gIf-hM-4J8"/>
                         <outlet property="runeThree" destination="3Su-8l-Nvx" id="Htu-Yt-dLe"/>
                         <outlet property="runeTwo" destination="qQA-YP-Q7R" id="hC8-9o-StD"/>
                         <outlet property="segmentedControl" destination="bqf-T0-sJB" id="JgG-ww-1a3"/>
@@ -623,7 +698,7 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                     <tabBarItem key="tabBarItem" title="Item" id="TgY-gE-lUq"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="j2k-q1-D92">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <rect key="frame" x="0.0" y="20" width="1024" height="44"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <nil name="viewControllers"/>
