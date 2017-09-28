@@ -20,8 +20,15 @@
                                 <action selector="runeCastButton" destination="AgC-eL-Hgc" id="TTb-8a-2m8"/>
                             </connections>
                         </button>
+                        <button width="1" alignment="center" verticalAlignment="bottom" hidden="YES" title="Clear" id="eWM-he-VHP">
+                            <connections>
+                                <action selector="runeClearButton" destination="AgC-eL-Hgc" id="5KJ-eV-Jav"/>
+                            </connections>
+                        </button>
                     </items>
                     <connections>
+                        <outlet property="clear" destination="eWM-he-VHP" id="gLa-9t-xCK"/>
+                        <outlet property="odinCast" destination="vAs-Xl-buL" id="lnV-J7-Hgx"/>
                         <outlet property="runeImage" destination="YmS-jF-FIt" id="OK0-uA-BsY"/>
                     </connections>
                 </controller>

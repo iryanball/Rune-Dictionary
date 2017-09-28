@@ -259,7 +259,7 @@ class CastingViewController: UIViewController {
             runeEight.image = runesCastArray[5]
             runeNine.image = runesCastArray[6]
             
-        }else {
+        } else {
             print(" Invalid Number")
         }
         
