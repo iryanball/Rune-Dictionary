@@ -10,6 +10,10 @@ import UIKit
 
 class CastingViewController: UIViewController {
     
+    
+    @IBOutlet weak var clear: UIButton!
+    @IBOutlet weak var cast: UIButton!
+    
    /* let runesArray = [Rune(runeName: "Fehu", runeImage: UIImage(named: ("Fehu.png"))!, runeDescription: "(F: Domestic cattle, wealth.) Possessions won or earned, earned income, luck. Abundance, financial strength in the present or near future. Sign of hope and plenty, success and happiness. Social success. Energy, foresight, fertility, creation/destruction (becoming).\n\n Fehu Reversed or Merkstave: Loss of personal property, esteem, or something that you put in effort to keep. It indicates some sort of failure. Greed, burnout, atrophy, discord. Cowardice, stupidity, dullness, poverty, slavery, bondage."),
                       Rune(runeName: "Uruz", runeImage: UIImage(named: ("Uruz.png"))!, runeDescription: "(U: Auroch, a wild ox.) Physical strength and speed, untamed potential. A time of great energy and health. Freedom, energy, action, courage, strength, tenacity, understanding, wisdom. Sudden or unexpected changes (usually for the better). Sexual desire, masculine potency. The shaping of power and pattern, formulation of the self.\n\n Uruz Reversed or Merkstave: Weakness, obsession, misdirected force, domination by others. Sickness, inconsistency, ignorance. Lust, brutality, rashness, callousness, violence."),
                       Rune(runeName: "Thurisaz", runeImage: UIImage(named: ("Thurisaz.png"))!, runeDescription: "(TH: Thorn or a Giant.) Reactive force, directed force of destruction and defense, conflict. Instinctual will, vital eroticism, regenerative catalyst. A tendency toward change. Catharsis, purging, cleansing fire. Male sexuality, fertilization. (Thorr, the Thunder god, was of Giant stock.)\n\n Thurisaz Reversed or Merkstave: Danger, defenselessness, compulsion, betrayal, dullness. Evil, malice, hatred, torment, spite, lies. A bad man or woman. Rape?"),
@@ -201,8 +205,26 @@ class CastingViewController: UIViewController {
         
     }
     
-    @IBAction func castButtonPressed(_ sender: Any) {
+    @IBAction func clearButtonPressed(_ sender: Any) {
         
+        runeOne.image = #imageLiteral(resourceName: "Blank")
+        runeTwo.image = #imageLiteral(resourceName: "Blank")
+        runeThree.image = #imageLiteral(resourceName: "Blank")
+        runeFour.image = #imageLiteral(resourceName: "Blank")
+        runeFive.image = #imageLiteral(resourceName: "Blank")
+        runeSix.image = #imageLiteral(resourceName: "Blank")
+        runeSeven.image = #imageLiteral(resourceName: "Blank")
+        runeEight.image = #imageLiteral(resourceName: "Blank")
+        runeNine.image = #imageLiteral(resourceName: "Blank")
+        
+        clear.isHidden = true
+        cast.isHidden = false
+        
+    }
+    
+    @IBAction func castButtonPressed(_ sender: Any) {
+        cast.isHidden = true
+        clear.isHidden = false
         runesCastArray = []
         
         if runeCast == 1 {
