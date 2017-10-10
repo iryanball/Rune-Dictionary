@@ -77,7 +77,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" usesAttributedText="YES" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sWR-Fg-1Tg">
-                                <rect key="frame" x="20" y="72" width="374" height="644"/>
+                                <rect key="frame" x="20" y="92" width="374" height="624"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <attributedString key="attributedText">
                                     <fragment content="How To Do A Reading">
@@ -382,7 +382,7 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KW4-k1-Gs7" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2656.8000000000002" y="794.75262368815595"/>
+            <point key="canvasLocation" x="1748" y="818"/>
         </scene>
         <!--Second View Controller-->
         <scene sceneID="W8l-8u-uPg">
@@ -456,7 +456,7 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Zg4-ao-J9w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2657.971014492754" y="136.14130434782609"/>
+            <point key="canvasLocation" x="2401" y="91"/>
         </scene>
         <!--Casting-->
         <scene sceneID="t2V-aP-inq">
@@ -717,7 +717,7 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="iDr-nU-9Np" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3312.5" y="134.765625"/>
+            <point key="canvasLocation" x="3051" y="90"/>
         </scene>
         <!--Item-->
         <scene sceneID="Dtq-uy-CW5">
@@ -736,7 +736,7 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jAW-Ec-GKi" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1026" y="136"/>
+            <point key="canvasLocation" x="1039" y="90"/>
         </scene>
         <!--Rune Dictionary-->
         <scene sceneID="fM6-8f-vBJ">
@@ -762,7 +762,7 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="LLL-FN-2R8" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1025" y="819"/>
+            <point key="canvasLocation" x="1039" y="818"/>
         </scene>
     </scenes>
     <resources>

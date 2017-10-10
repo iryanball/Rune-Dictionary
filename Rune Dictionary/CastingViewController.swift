@@ -191,6 +191,9 @@ class CastingViewController: UIViewController {
     
     @IBAction func castType(_ sender: Any) {
         
+        clear.isHidden = true
+        cast.isHidden = false
+        
         switch segmentedControl.selectedSegmentIndex {
         case 0:
             odinCast()
