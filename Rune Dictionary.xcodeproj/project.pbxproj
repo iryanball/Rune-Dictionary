@@ -26,6 +26,7 @@
 		1EAEAD491F7D36A1003A4695 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76BDD51F14F104006560AA /* InterfaceController.swift */; };
 		1EC1BCB51F06F21900F19EFB /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1BCB41F06F21900F19EFB /* InfoViewController.swift */; };
 		1ECE205A1F06C02C009CC2D8 /* CastingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECE20591F06C02C009CC2D8 /* CastingViewController.swift */; };
+		1ED696261FA796770095A3DD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED696251FA796770095A3DD /* SettingsViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -112,6 +113,7 @@
 		1E76BDDB1F14F104006560AA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		1EC1BCB41F06F21900F19EFB /* InfoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InfoViewController.swift; sourceTree = "<group>"; };
 		1ECE20591F06C02C009CC2D8 /* CastingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CastingViewController.swift; sourceTree = "<group>"; };
+		1ED696251FA796770095A3DD /* SettingsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -172,6 +174,7 @@
 				1E4404B81EFDD51400A8193E /* SecondViewController.swift */,
 				1ECE20591F06C02C009CC2D8 /* CastingViewController.swift */,
 				1EC1BCB41F06F21900F19EFB /* InfoViewController.swift */,
+				1ED696251FA796770095A3DD /* SettingsViewController.swift */,
 				1E3E16521EFDCC5B00BF6774 /* Main.storyboard */,
 				1E3E16551EFDCC5B00BF6774 /* Assets.xcassets */,
 				1E3E16571EFDCC5B00BF6774 /* LaunchScreen.storyboard */,
@@ -379,6 +382,7 @@
 				1E3E16511EFDCC5B00BF6774 /* ViewController.swift in Sources */,
 				1EC1BCB51F06F21900F19EFB /* InfoViewController.swift in Sources */,
 				1E3E164F1EFDCC5B00BF6774 /* AppDelegate.swift in Sources */,
+				1ED696261FA796770095A3DD /* SettingsViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
