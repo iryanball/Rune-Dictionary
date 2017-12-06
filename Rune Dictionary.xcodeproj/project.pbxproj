@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1E16229B1F14F5BB007D777B /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76BDD51F14F104006560AA /* InterfaceController.swift */; };
 		1E1622A31F14F9AF007D777B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E76BDC91F14F104006560AA /* Assets.xcassets */; };
 		1E2722E61F0BC7A5003BD7F3 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E2722E51F0BC7A5003BD7F3 /* Stickers.xcassets */; };
 		1E2722EA1F0BC7A5003BD7F3 /* Rune Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1E2722E31F0BC7A5003BD7F3 /* Rune Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
@@ -18,12 +17,14 @@
 		1E3E16591EFDCC5B00BF6774 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E16571EFDCC5B00BF6774 /* LaunchScreen.storyboard */; };
 		1E3E16611EFDCDBC00BF6774 /* Rune.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3E16601EFDCDBC00BF6774 /* Rune.swift */; };
 		1E4404B91EFDD51400A8193E /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E4404B81EFDD51400A8193E /* SecondViewController.swift */; };
+		1E5418CD1FD76B39002415C4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76BDD51F14F104006560AA /* InterfaceController.swift */; };
+		1E5418CE1FD76B3A002415C4 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76BDD51F14F104006560AA /* InterfaceController.swift */; };
+		1E5418D01FD76B45002415C4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E76BDC91F14F104006560AA /* Assets.xcassets */; };
 		1E76BDC81F14F104006560AA /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E76BDC61F14F104006560AA /* Interface.storyboard */; };
 		1E76BDD11F14F104006560AA /* Rune Cast Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1E76BDD01F14F104006560AA /* Rune Cast Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
 		1E76BDD81F14F104006560AA /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76BDD71F14F104006560AA /* ExtensionDelegate.swift */; };
 		1E76BDDE1F14F104006560AA /* Rune Cast.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 1E76BDC41F14F104006560AA /* Rune Cast.app */; };
 		1EAEAD481F7D367B003A4695 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E76BDD91F14F104006560AA /* Assets.xcassets */; };
-		1EAEAD491F7D36A1003A4695 /* InterfaceController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E76BDD51F14F104006560AA /* InterfaceController.swift */; };
 		1EC1BCB51F06F21900F19EFB /* InfoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1EC1BCB41F06F21900F19EFB /* InfoViewController.swift */; };
 		1ECE205A1F06C02C009CC2D8 /* CastingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ECE20591F06C02C009CC2D8 /* CastingViewController.swift */; };
 		1ED696261FA796770095A3DD /* SettingsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1ED696251FA796770095A3DD /* SettingsViewController.swift */; };
@@ -364,6 +365,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1E5418D01FD76B45002415C4 /* Assets.xcassets in Resources */,
 				1EAEAD481F7D367B003A4695 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -376,9 +378,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E4404B91EFDD51400A8193E /* SecondViewController.swift in Sources */,
+				1E5418CE1FD76B3A002415C4 /* InterfaceController.swift in Sources */,
 				1E3E16611EFDCDBC00BF6774 /* Rune.swift in Sources */,
 				1ECE205A1F06C02C009CC2D8 /* CastingViewController.swift in Sources */,
-				1E16229B1F14F5BB007D777B /* InterfaceController.swift in Sources */,
 				1E3E16511EFDCC5B00BF6774 /* ViewController.swift in Sources */,
 				1EC1BCB51F06F21900F19EFB /* InfoViewController.swift in Sources */,
 				1E3E164F1EFDCC5B00BF6774 /* AppDelegate.swift in Sources */,
@@ -391,7 +393,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1E76BDD81F14F104006560AA /* ExtensionDelegate.swift in Sources */,
-				1EAEAD491F7D36A1003A4695 /* InterfaceController.swift in Sources */,
+				1E5418CD1FD76B39002415C4 /* InterfaceController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

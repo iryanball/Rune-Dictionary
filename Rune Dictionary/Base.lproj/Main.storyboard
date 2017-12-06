@@ -407,6 +407,9 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b8J-Cs-pBn">
                                         <rect key="frame" x="146.66666666666666" y="130.66666666666666" width="51" height="130.99999999999997"/>
+                                        <connections>
+                                            <action selector="reversedRunesChanged:" destination="pAR-XY-y3I" eventType="valueChanged" id="bdn-aw-Rao"/>
+                                        </connections>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Duplicate Runes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FmH-C9-pFR">
                                         <rect key="frame" x="43.333333333333329" y="261.66666666666669" width="255.66666666666669" height="130.66666666666669"/>
@@ -416,6 +419,9 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6AD-ut-WPX">
                                         <rect key="frame" x="146.66666666666666" y="392.33333333333331" width="51" height="130.66666666666669"/>
+                                        <connections>
+                                            <action selector="duplicateRunesChanged:" destination="pAR-XY-y3I" eventType="valueChanged" id="aSq-sw-cNX"/>
+                                        </connections>
                                     </switch>
                                 </subviews>
                             </stackView>
@@ -429,6 +435,10 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                         </constraints>
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="icons8-settings" id="IoH-nt-IYh"/>
+                    <connections>
+                        <outlet property="allowDuplicateRunesSwitch" destination="6AD-ut-WPX" id="ope-Fd-dbg"/>
+                        <outlet property="allowReversedRunesSwitch" destination="b8J-Cs-pBn" id="5nC-Y0-zia"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Evm-MV-BoI" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
