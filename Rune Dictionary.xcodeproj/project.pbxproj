@@ -10,7 +10,7 @@
 		1E1622A31F14F9AF007D777B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E76BDC91F14F104006560AA /* Assets.xcassets */; };
 		1E2722E61F0BC7A5003BD7F3 /* Stickers.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1E2722E51F0BC7A5003BD7F3 /* Stickers.xcassets */; };
 		1E2722EA1F0BC7A5003BD7F3 /* Rune Stickers.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 1E2722E31F0BC7A5003BD7F3 /* Rune Stickers.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		1E38987F1FE03AED00626275 /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E38987E1FE03AED00626275 /* Launch Screen.storyboard */; };
+		1E38987F1FE03AED00626275 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E38987E1FE03AED00626275 /* LaunchScreen.storyboard */; };
 		1E3E164F1EFDCC5B00BF6774 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3E164E1EFDCC5B00BF6774 /* AppDelegate.swift */; };
 		1E3E16511EFDCC5B00BF6774 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1E3E16501EFDCC5B00BF6774 /* ViewController.swift */; };
 		1E3E16541EFDCC5B00BF6774 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1E3E16521EFDCC5B00BF6774 /* Main.storyboard */; };
@@ -94,7 +94,7 @@
 		1E2722E31F0BC7A5003BD7F3 /* Rune Stickers.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "Rune Stickers.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E2722E51F0BC7A5003BD7F3 /* Stickers.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Stickers.xcassets; sourceTree = "<group>"; };
 		1E2722E71F0BC7A5003BD7F3 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		1E38987E1FE03AED00626275 /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
+		1E38987E1FE03AED00626275 /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 		1E3E164B1EFDCC5B00BF6774 /* Rune Dictionary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Rune Dictionary.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1E3E164E1EFDCC5B00BF6774 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		1E3E16501EFDCC5B00BF6774 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -178,7 +178,7 @@
 				1ED696251FA796770095A3DD /* SettingsViewController.swift */,
 				1E3E16521EFDCC5B00BF6774 /* Main.storyboard */,
 				1E3E16551EFDCC5B00BF6774 /* Assets.xcassets */,
-				1E38987E1FE03AED00626275 /* Launch Screen.storyboard */,
+				1E38987E1FE03AED00626275 /* LaunchScreen.storyboard */,
 				1E3E165A1EFDCC5B00BF6774 /* Info.plist */,
 			);
 			path = "Rune Dictionary";
@@ -346,7 +346,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1E38987F1FE03AED00626275 /* Launch Screen.storyboard in Resources */,
+				1E38987F1FE03AED00626275 /* LaunchScreen.storyboard in Resources */,
 				1E3E16561EFDCC5B00BF6774 /* Assets.xcassets in Resources */,
 				1E3E16541EFDCC5B00BF6774 /* Main.storyboard in Resources */,
 			);
