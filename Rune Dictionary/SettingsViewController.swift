@@ -8,10 +8,9 @@
 
 import UIKit
 
+var selectedRunesArray = [Rune]()
+
 class SettingsViewController: UIViewController {
-    
-    var allowReversedRunes = true
-    var allowDuplicateRunes = true
     
     @IBOutlet weak var allowReversedRunesSwitch: UISwitch!
     @IBOutlet weak var allowDuplicateRunesSwitch: UISwitch!
@@ -24,25 +23,25 @@ class SettingsViewController: UIViewController {
     
     @IBAction func reversedRunesChanged(_ sender: Any) {
         
-        if allowReversedRunesSwitch.isOn {
+        if allowReversedRunesSwitch.isOn == true {
             
-            allowReversedRunes = true
+            selectedRunesArray = runesIncReversedArray
             
         } else {
-            allowReversedRunes = false
+            selectedRunesArray = runesArray
         }
         
     }
     
     @IBAction func duplicateRunesChanged(_ sender: Any) {
         
-        if allowDuplicateRunesSwitch.isOn {
+        if allowDuplicateRunesSwitch.isOn == true {
             
-            allowDuplicateRunes = true
+           
             
         } else {
             
-            allowDuplicateRunes = false
+            
             
         }
         
