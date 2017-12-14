@@ -124,7 +124,7 @@ class CastingViewController: UIViewController {
         runeSeven.isHidden = true
         runeEight.isHidden = true
         runeNine.isHidden = true
-
+        
         
     }
     
@@ -266,7 +266,7 @@ class CastingViewController: UIViewController {
             runeFive.image = runesCastArray[4]
             
         }
-        
+            
         else if runeCast == 7 {
             
             for _ in 0...6 {

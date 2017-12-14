@@ -19,9 +19,17 @@ class SettingsViewController: UIViewController {
         super.viewDidLoad()
         
         // Do any additional setup after loading the view.
+        if allowReversedRunesSwitch.isOn == true {
+            
+            selectedRunesArray = runesIncReversedArray
+            
+        } else {
+            selectedRunesArray = runesArray
+        }
+
     }
     
-    @IBAction func reversedRunesChanged(_ sender: Any) {
+    @IBAction func reversedRunesChanged(_ sender: UISwitch) {
         
         if allowReversedRunesSwitch.isOn == true {
             
@@ -33,7 +41,7 @@ class SettingsViewController: UIViewController {
         
     }
     
-    @IBAction func duplicateRunesChanged(_ sender: Any) {
+    @IBAction func duplicateRunesChanged(_ sender: UISwitch) {
         
         if allowDuplicateRunesSwitch.isOn == true {
             
