@@ -8,7 +8,7 @@
 
 import UIKit
 
-var selectedRunesArray = [Rune]()
+var selectedRunesArray = runesIncReversedArray
 
 class SettingsViewController: UIViewController {
     
