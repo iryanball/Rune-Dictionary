@@ -400,27 +400,39 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                                 <rect key="frame" x="36" y="114" width="342" height="523"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Reversed Runes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bJQ-mO-6BS">
-                                        <rect key="frame" x="45.333333333333329" y="0.0" width="251.66666666666669" height="130.66666666666666"/>
+                                        <rect key="frame" x="45.333333333333329" y="0.0" width="251.66666666666669" height="87.333333333333329"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="b8J-Cs-pBn">
-                                        <rect key="frame" x="146.66666666666666" y="130.66666666666666" width="51" height="130.99999999999997"/>
+                                        <rect key="frame" x="146.66666666666666" y="87.333333333333343" width="51" height="87"/>
                                         <connections>
                                             <action selector="reversedRunesChanged:" destination="pAR-XY-y3I" eventType="valueChanged" id="bdn-aw-Rao"/>
                                         </connections>
                                     </switch>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Allow Duplicate Runes" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FmH-C9-pFR">
-                                        <rect key="frame" x="43.333333333333329" y="261.66666666666669" width="255.66666666666669" height="130.66666666666669"/>
+                                        <rect key="frame" x="43.333333333333329" y="174.33333333333331" width="255.66666666666669" height="87.333333333333314"/>
                                         <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" on="YES" translatesAutoresizingMaskIntoConstraints="NO" id="6AD-ut-WPX">
-                                        <rect key="frame" x="146.66666666666666" y="392.33333333333331" width="51" height="130.66666666666669"/>
+                                        <rect key="frame" x="146.66666666666666" y="261.66666666666669" width="51" height="87"/>
                                         <connections>
                                             <action selector="duplicateRunesChanged:" destination="pAR-XY-y3I" eventType="valueChanged" id="aSq-sw-cNX"/>
+                                        </connections>
+                                    </switch>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Night Mode" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yI8-Qm-J8r">
+                                        <rect key="frame" x="102.33333333333336" y="348.66666666666669" width="137.66666666666663" height="87.333333333333314"/>
+                                        <fontDescription key="fontDescription" name="AvenirNext-Regular" family="Avenir Next" pointSize="25"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <switch opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="e2F-Y7-Y9p">
+                                        <rect key="frame" x="146.66666666666666" y="436" width="51" height="87"/>
+                                        <connections>
+                                            <action selector="nightModeChanged:" destination="pAR-XY-y3I" eventType="valueChanged" id="rnF-ch-0TV"/>
                                         </connections>
                                     </switch>
                                 </subviews>
@@ -436,8 +448,12 @@ Another way to do it is to draw an imaginary line down the centre of your castin
                     </view>
                     <tabBarItem key="tabBarItem" title="Settings" image="icons8-settings" id="IoH-nt-IYh"/>
                     <connections>
+                        <outlet property="allowDuplicateRunesLabel" destination="FmH-C9-pFR" id="FD5-Mf-Qbc"/>
                         <outlet property="allowDuplicateRunesSwitch" destination="6AD-ut-WPX" id="ope-Fd-dbg"/>
+                        <outlet property="allowReversedRunesLabel" destination="bJQ-mO-6BS" id="M3E-3u-8lk"/>
                         <outlet property="allowReversedRunesSwitch" destination="b8J-Cs-pBn" id="5nC-Y0-zia"/>
+                        <outlet property="nightModeLabel" destination="yI8-Qm-J8r" id="vZY-9C-k59"/>
+                        <outlet property="nightModeSwitch" destination="e2F-Y7-Y9p" id="MYB-sN-wGc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Evm-MV-BoI" userLabel="First Responder" sceneMemberID="firstResponder"/>
